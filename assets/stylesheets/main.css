@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root {
+    --primary-color: #24a3a7;
+    --primary-dark-color: #aaa3ff;
+
+    --dark: #252525;
+    --white: #f0f0f0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    background-color: var(--white);
+}
+
+.dark-mode {
+    background-color: var(--dark);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Primary Color */
+.primary {
+    color: var(--primary-color) !important;
+}
+
+.primary-dark {
+    color: var(--primary-dark-color);
+}
+
+.unimargin {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+/* Header Code */
+header {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+header .left {
+
+    font-weight: 600;
+}
+
+header .right {
+    display: flex;
+    gap: 2rem;
+}
+
+header .right button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+header .nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+header .nav .element:hover {
+    text-decoration: underline;
+}
+
+/* Footer Code */
+footer {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.footer-white {
+    background-color: var(--white) !important;
+}
+
+.footer-dark {
+    background-color: var(--dark);
+}
+
+footer.stickbottom {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Main Page Code */
+.home {
+    font-size: 1rem;
+}
+
+.home .head {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.home .subhead {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    max-width: 50%;
+}
+
+.home .data {
+    max-width: 77%;
+}
+
+.home .data .p {
+    margin-top: 2rem;
+    max-width: 77%;
+}
+
+.home .data a {
+    color: var(--primary-dark-color);
+    text-decoration: underline;
+}
+
+.home .data a.dark-home-anchor {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.home .img {
+    float: left;
+    margin-top: 0;
+    margin-right: 2rem;
+}
+
+.home .img img {
+    max-width: 16rem;
+    border-radius: 14px;
+}
+
+.home .updates {
+    float: right;
+    margin-left: 2rem;
+    max-width: 24rem;
+    min-height: 24rem;
+    border: 1px solid var(--primary-dark-color);
+    padding: 1rem;
+    border-radius: 14px;
+}
+
+.home .updates .title {
+    color: var(--primary-dark-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.home .updates .entry {
+    padding: 0.5rem 1rem;
+    border-top: 2px dotted var(--primary-dark-color);
+    border-bottom: 2px dotted var(--primary-dark-color);
+}
+
+.home .updates .entry .head {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.home .updates .entry .date {
+    font-size: 0.75rem;
+}
+
+.home .updates .entry .content {
+    font-size: 14px;
+}
+
+.home .footnote {
+    font-size: 0.75rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Journal Page */
+.journal .entry {
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--primary-dark-color);
+    border-left: 10px solid var(--primary-dark-color);
+}
+
+.journal .entry-dark {
+    border: 1px solid var(--primary-color) !important;
+    border-left: 10px solid var(--primary-color) !important;
+}
+
+.journal .entry .spin {
+    font-size: 0.75rem;
+}
+
+.journal .entry .name {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.journal .entry .date {
+    margin: 0.25rem 0;
+    font-size: 0.75rem;
+}
+
+.journal .entry:hover .name {
+    text-decoration: underline dotted;
+}
+
+.journal .head {
+    font-size: 1.5rem;
+}
+
+/* CV Page */
+.cv-card-holder {
+    margin: 22vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cv-card {
+    border: 1px solid var(--primary-dark-color);
+    padding: 1rem 1.5rem;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cv-card-dark {
+    border: 1px solid var(--primary-color) !important;
+}
+
+.cv-card .head {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.cv-card .subhead {
+    font-size: 0.75rem;
+}
+
+.cv-card button {
+    border: 1px solid var(--primary-dark-color);
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 14px;
+    background-color: transparent;
+    color: var(--primary-dark-color);
+    margin: 1rem 0;
+}
+
+.cv-card button.darkcvbtn {
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color);
+}
+
+.cv-card button:hover {
+    background-color: var(--primary-dark-color);
+    color: white;
+}
+
+.cv-card button:hover.darkcvbtn {
+    background-color: var(--primary-color) !important;
+    color:white;
+}
