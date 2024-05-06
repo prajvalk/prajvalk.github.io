@@ -25,4 +25,12 @@ function toggle() {
         this.classList.toggle("darkcvbtn");
         return 0;
     }).get();
+    var cvc = $(".updates").map(function() {
+        this.classList.toggle("updates-light");
+        return 0;
+    }).get();
 }
+
+$(document).ready(function(){
+    $('footer').load("footer.html");
+ });
