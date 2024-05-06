@@ -406,3 +406,109 @@ footer {
     background-color: var(--primary-color) !important;
     color:white;
 }
+
+/* Image Pane Code */
+
+.imagepane {
+    display: flex;
+    margin: 1rem 0 0 0;
+    border: 1px solid var(--primary-color);
+    gap: 1.5rem;
+    border-radius: 14px;
+    border-bottom-left-radius: 0;
+}
+
+.dark-mode .imagepane {
+    border: 1px solid var(--primary-dark-color);
+}
+
+.imagepane .display .img {
+    display: none;
+}
+
+.imagepane .display .img img {
+    max-width: 100%;
+    margin-bottom: -5px; /* Ghost Margin Fix; It Works -- Don't Touch, Don't Ask */
+}
+
+.imagepane .content {
+    min-width: 60%;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.imagepane .content .head {
+    font-size: 2rem;
+}
+
+.imagepane .content .date {
+    font-size: 14px;
+}
+
+.imagepane .content .description {
+    margin-top: 1rem;
+    max-width: 80%;
+}
+
+.imagepane .content .foot {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.imagepane .content .c-class {
+    display: none;
+}
+
+.horview .imagepane {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.horview .imagepane .content {
+    padding: 1rem;
+}
+
+.horview .imagepane .content .foot {
+    position: relative;
+    bottom: unset;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1000px) { 
+    .imagepane {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .imagepane .content {
+        padding: 1rem;
+    }
+    
+    .imagepane .content .foot {
+        position: relative;
+        bottom: unset;
+        margin-top: 1rem;
+    }
+
+    .controlpane .or-icon {
+        display: none;
+    }
+}
+
+.controlpane {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    max-width: fit-content;
+    padding: 0.5rem 1rem;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: white;
+}
+
+.dark-mode .controlpane {
+    background-color: var(--primary-dark-color);
+}
