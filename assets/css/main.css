@@ -1,0 +1,20 @@
+@import url(https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.orange.min.css);
+
+footer p {
+    font-size: 12pt;
+}
+
+.demark-top {
+    border-top: 2px solid var(--pico-primary);
+    padding-top: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.demark-bottom {
+    border-bottom: 2px solid var(--pico-primary);
+    margin-bottom: 0.25rem;
+}
+
+.heading-inline h1, h2, h3, h4, h5, h6 {
+    display: inline;
+}
