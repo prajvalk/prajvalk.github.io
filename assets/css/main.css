@@ -1,4 +1,5 @@
-@import url(https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.orange.min.css);
+@import url(https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.green.min.css);
+@import url(https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css);
 
 footer p {
     font-size: 12pt;
@@ -15,6 +16,17 @@ footer p {
     margin-bottom: 0.25rem;
 }
 
-.heading-inline h1, h2, h3, h4, h5, h6 {
+.heading-inline h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     display: inline;
+}
+
+td:first-child,
+th:first-child {
+    width: 0;
+    min-width: fit-content;
 }

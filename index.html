@@ -1,25 +1,150 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="light dark" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Prajval K | Home</title>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+            integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Prajval K | Home</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-</head>
+    <body>
+        <div id="header"></div>
+        <main class="container">
+            <hgroup>
+                <h1>Welcome to my space!</h1>
+                <small
+                    >I am a Masters student, interested in Method Development
+                    Computational Chemistry</small
+                >
+            </hgroup>
 
-<body>
-    <div id="header"></div>
-    <main class="container">
-        <hgroup>
-            <h1>Welcome to my space!</h1>
-            <small>I am a Masters student, interested in Method Development Computational Chemistry</small>
-        </hgroup>
-    </main>
-    <div id="footer"></div>
-</body>
+            <div>
+                <hgroup><h3>Projects</h3></hgroup>
+                <details name="proj-qchember" open>
+                    <summary>
+                        <i class="fa-brands fa-git-alt"></i> QChember
+                    </summary>
+                    A computational chemistry package, mostly built for fun, as
+                    a optimization and testing code base. Currently capable of
+                    performing Hartree-Fock calculations in any basis (supported
+                    in Basis Set Exchange) and geometry. In active development.
+                    <br />
+                    <a href="https://git.prajvalk.me/QChember_v2">
+                        <i class="fa-brands fa-git-alt"></i> Link to Internal
+                        Git Server</a
+                    >
+                    (if you are interested, please email me)
+                </details>
 
+                <details name="proj-libgemm" open>
+                    <summary>
+                        <i class="fa-brands fa-github"></i> libgemm
+                    </summary>
+                    Acceleration of conventional matrix-matrix multiplication
+                    using low-precision approximations (using Ozaki Scheme I and
+                    II). The project provides a simple C/C++ CUDA interception
+                    library to remap selected BLAS Level 3 GEMM (General
+                    Matrix-Matrix Multiplication) to Ozaki Scheme Code. <br />
+                    The project also provides a PySCF python patched code to
+                    selectively enable interception of explicit GEMM calls
+                    leaving LAPACK internal GEMM calls intact. <br />
+                    <a href="https://github.com/prajvalk/libgemm">
+                        <i class="fa-brands fa-github"></i> Link to GitHub</a
+                    >
+                    <a href="https://doi.org/10.1177/10943420241313064"
+                        ><i class="fa-solid fa-scroll"></i> Link to Ozaki Scheme
+                        I Paper
+                    </a>
+                    <a href="https://doi.org/10.48550/arXiv.2508.03984">
+                        <i class="fa-solid fa-scroll"></i> Link to Ozaki Scheme
+                        II Paper
+                    </a>
+                </details>
+
+                <details name="proj-rsla" open>
+                    <summary><i class="fa-brands fa-github"></i> rsla</summary>
+                    Provides high-level linear algebra wrappers for configurable
+                    backends (Armadillo C++ and MPLAPACK, currently supported).
+                    Built as a test library for arbitrary precision linear
+                    algebra for scientific numerical algorithms. <br />
+                    <a href="https://github.com/prajvalk/rsla">
+                        <i class="fa-brands fa-github"></i> Link to GitHub
+                        (Private)
+                    </a>
+                    (if you are interested, please email me)
+                </details>
+
+                <details name="proj-wsp2j" open>
+                    <summary><i class="fa-brands fa-github"></i> wsp2j</summary>
+                    Web Scraping Project for Java version 2 (wsp2j). Provides a
+                    minimal robust utility to monitor website changes using
+                    continious hashing with the help of the JSoup library.
+                    <br />
+                    <a href="https://github.com/prajvalk/wsp2j">
+                        <i class="fa-brands fa-github"></i> Link to GitHub
+                    </a>
+                </details>
+
+                <details name="proj-superpermutation" open>
+                    <summary>
+                        <i class="fa-brands fa-github"></i> superpermutation
+                    </summary>
+                    An old project which explored generating superpermutations
+                    for N > 3 in Java. <br />
+                    <a href="https://github.com/prajvalk/superpermutation">
+                        <i class="fa-brands fa-github"></i> Link to GitHub
+                    </a>
+                </details>
+            </div>
+            <div>
+                <hgroup>
+                    <h3><i class="fa-solid fa-server"></i> Hosted Services</h3>
+                </hgroup>
+                <table>
+                    <tr>
+                        <th>Host</th>
+                        <th>Service</th>
+                    </tr>
+                    <tr>
+                        <td>StormChaser</td>
+                        <td>
+                            <a href="https://git.prajvalk.me"
+                                ><i class="fa-brands fa-git-alt"></i> Internal
+                                Git Server</a
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>StormChaser</td>
+                        <td>
+                            <a href="https://stormchaser.prajvalk.me"
+                                ><i class="fa-brands fa-jenkins"></i> Jenkins
+                                Build Server</a
+                            >
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <div id="footer"></div>
+    </body>
 </html>
